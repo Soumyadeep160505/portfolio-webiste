@@ -1,0 +1,229 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #28a745;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* About Section */
+#about {
+  padding: 50px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2em;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: inline-block;
+  width: 45%;
+  margin: 20px 2%;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+.project .project-thumbnail {
+  width: 100%;
+  height: 150px;
+  background-color: #28a745;
+  border-radius: 10px;
+}
+
+.project p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#skills h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 50%;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #28a745;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1em;
+}
+/* Dark Mode Support */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode nav a,
+.dark-mode .cta-button,
+.dark-mode .download-btn,
+.dark-mode .skill-icon {
+  color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+/* Reveal effect */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
